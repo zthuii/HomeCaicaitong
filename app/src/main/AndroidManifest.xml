@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homecaicaitong">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Demo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HomeCaicaitong">
+        <activity
+            android:name=".Sysset"
+            android:exported="false" />
+        <activity
+            android:name=".Showinfo"
+            android:exported="false" />
+        <activity
+            android:name=".Outaccountinfo"
+            android:exported="false" />
+        <activity
+            android:name=".InfoManage"
+            android:exported="false" />
+        <activity
+            android:name=".Inaccountinfo"
+            android:exported="false" />
+        <activity
+            android:name=".FlagManage"
+            android:exported="false" />
+        <activity
+            android:name=".AddOutaccount"
+            android:exported="false" />
+        <activity
+            android:name=".AddInaccount"
+            android:exported="false" />
+        <activity
+            android:name=".Accountflag"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

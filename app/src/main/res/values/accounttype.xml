@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="outtype">
+   		<item>早餐</item>
+   		<item>午餐</item>
+   		<item>晚餐</item>
+   		<item>夜宵</item>
+   		<item>买菜</item>
+   		<item>随礼</item>
+   		<item>应酬</item>
+   		<item>打的</item>
+   		<item>其他</item>
+   </string-array>
+   <string-array name="intype">
+   		<item>工资</item>
+   		<item>兼职</item>
+   		<item>股票</item>
+   		<item>基金</item>
+   		<item>分红</item>
+   		<item>利息</item>
+   		<item>奖金</item>
+   		<item>补贴</item>
+   		<item>礼金</item>
+   		<item>租金</item>
+   		<item>应收款</item>
+   		<item>销售款</item>
+   		<item>报销款</item>
+   		<item>其他</item>
+   </string-array>
+   <string-array name="type">
+   		<item>早餐</item>
+   		<item>午餐</item>
+   		<item>晚餐</item>
+   		<item>夜宵</item>
+   		<item>买菜</item>
+   		<item>随礼</item>
+   		<item>应酬</item>
+   		<item>打的</item>
+   		<item>工资</item>
+   		<item>兼职</item>
+   		<item>股票</item>
+   		<item>基金</item>
+   		<item>分红</item>
+   		<item>利息</item>
+   		<item>奖金</item>
+   		<item>补贴</item>
+   		<item>礼金</item>
+   		<item>租金</item>
+   		<item>应收款</item>
+   		<item>销售款</item>
+   		<item>报销款</item>
+   		<item>其他</item>
+   </string-array>
+</resources>

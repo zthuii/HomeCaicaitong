@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main">家庭理财通</string>
+    <string name="app_name">家庭理财通</string>
+    <string name="login">系统登录</string>
+    <string name="addoutaccount">新增支出</string>
+    <string name="addinaccount">新增收入</string>
+    <string name="outaccountinfo">我的支出</string>
+    <string name="inaccountinfo">我的收入</string>
+    <string name="showinfo">数据管理</string>
+    <string name="sysset">系统设置</string>
+    <string name="accountflag">收支便签</string>
+    <string name="infomanage">收支管理</string>
+    <string name="flagmanage">便签管理</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="请输入密码："
+        android:textColor="#8C6931"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLogin"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtLogin"
+        android:layout_marginLeft="10dp"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogin"
+        android:layout_toLeftOf="@id/btnClose"
+        android:text="登录" />
+
+</RelativeLayout>

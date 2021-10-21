@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/initem"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="新增收入"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvInMoney"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtInMoney"
+                android:layout_alignBottom="@+id/txtInMoney"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:text="金  额："
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtInMoney"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvInMoney"
+                android:hint="0.00"
+                android:inputType="number"
+                android:maxLength="9"
+                android:numeric="integer" />
+
+            <TextView
+                android:id="@+id/tvInTime"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtInTime"
+                android:layout_alignBottom="@+id/txtInTime"
+                android:layout_toLeftOf="@+id/txtInMoney"
+                android:text="时  间："
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtInTime"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtInMoney"
+                android:layout_toRightOf="@id/tvInTime"
+                android:hint="2011-01-01"
+                android:inputType="datetime" />
+
+            <TextView
+                android:id="@+id/tvInType"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/spInType"
+                android:layout_alignBottom="@+id/spInType"
+                android:layout_alignLeft="@+id/tvInTime"
+                android:text="类  别："
+                android:textSize="20sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spInType"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtInTime"
+                android:layout_toRightOf="@id/tvInType"
+                android:entries="@array/intype" />
+
+            <TextView
+                android:id="@+id/tvInHandler"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtInHandler"
+                android:layout_alignBottom="@+id/txtInHandler"
+                android:layout_toLeftOf="@+id/spInType"
+                android:text="付款方："
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtInHandler"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spInType"
+                android:layout_toRightOf="@id/tvInHandler"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/tvInMark"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtInMark"
+                android:layout_toLeftOf="@+id/txtInHandler"
+                android:text="备  注："
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtInMark"
+                android:layout_width="210dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/txtInHandler"
+                android:layout_toRightOf="@id/tvInMark"
+                android:gravity="top"
+                android:singleLine="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btnInCancel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/btnInSave"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btnInCancel"
+                android:text="保存" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
